@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Grande Cantina</title>
+        <link rel="icon" href="imagens/logo.jpg">
+        
+
+        <!--bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <!--css-->
+        <link rel="stylesheet" href="css/estilo.css">
+
+        <!--icones-->
+        <script src="https://kit.fontawesome.com/f22b9db43a.js" crossorigin="anonymous"></script>
+
+        <!--js-->
+        <script src="js/bandeja.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav  class="navbar navbar-expand-md navbar-light navbar-transparente ">
+                <div class="container ">
+                    <a href="index.html" class="navbar-brand ">
+                        <!--logo feito no https://www.wix.com/ editado no gimp-->
+                        <img src="imagens/logo.jpg" width="138px" height="90px" class="rounded float-left" class="img-fluid" alt="Imagem responsiva">
+                    </a>
+                    
+                    <button class="navbar-toggler mr-5" data-toggle="collapse" data-target="#nav-principal">
+                        <i class="fas fa-bars text-secondary"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse " id="nav-principal" >
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item ">
+                                <a href="bebidas.html" class="nav-link">Bebidas</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="salgado.html" class="nav-link">Salgados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="lanches.html" class="nav-link">Lanches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="totalBandeja.html" class="nav-link">Sua Bandeja</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class ="col-md-12 mt-4">
+                        <div class="text-center">
+                            <b class="display-3">Seja Bem Vindo!</b>
+                            <div class="text-left mt-5">
+                                <p>
+                                    Para pedir é muito facil, abaixo temos as categorias: Bebidas,
+                                    Lanches e Salgados. Só escolher. <br>
+                                    Adicione tudo o que deseja na sua bandeja.<br>
+                                    Depois é só mostrar as escolhas para nosso garçon.<br>
+                                    Você ja confere o valor na hora.
+                                </p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <b class="display-5">Lanches:</b>
+                            <a href="totalBandeja.html" class="btn btn-success  float-right">Sua Bandeja</a>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-3 ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <img src="imagens/h1.jpg" width="100%" height="350px">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center mt-5">
+                            <b>Furioso</b>
+                            <p class="mt-2 mb-2">Pão com gergelim, um suculento hambúrguer de pura carne bovina, 
+                                queijo, bacon, alface, tomate, maionese, pimenta jalapeño, cebolas crocantes levemente 
+                                apimentadas e um delicioso molho furioso.</p>
+                            <p class="">R$44.30</p>
+                            <a href="" class="btn btn-success mt-5" onclick="cadastrarDespesa('furioso', '44.30')">Adicionar a bandeja</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-3 ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <img src="imagens/h3.jpg" width="100%" height="350px">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center mt-5">
+                            <b>Chicken Crisp Barbecue Bacon</b>
+                            <p class="mt-2 mb-2">Chicken Crisp Barbecue Bacon. Imagine um suculento 
+                                filé de peito de frango, fatias crocantes de bacon, queijo derretido, 
+                                alface, cebola, tomate, a exclusiva maionese BK e aquele incrível molho 
+                                barbecue, tudo dentro de um delicioso pão de brioche.</p>
+                            <p class="">R$38.30</p>
+                            <a href="" class="btn btn-success mt-5" onclick="cadastrarDespesa('chicken crips', '38.30')">Adicionar a bandeja</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mt-3 ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div>
+                            <img src="imagens/combo2.jpg " width="100%" height="350px">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-center mt-5">
+                            <b>Combo Big Tasty</b>
+                            <p class="mt-2 mb-2">O maior sanduíche de carne 100% bovina do McDonald's. 
+                                3 deliciosas fatias de queijo, tomate, alface crocante, cebola e o dobro de molho Tasty.
+                                + 1 batata grande</p>
+                            <p class="">R$60.50</p>
+                            <a href="" class="btn btn-success mt-5" onclick="cadastrarDespesa('combo big tasty', '60.50')">Adicionar a bandeja</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer class="mt-4 mb-4">
+            <div class="container">
+                <div class="row bg-secondary text-white">
+                    <div class="col-md-3 float-left mt-3">
+                        <a href="index.html">
+                            <!--logo da unip-->
+                            <img src="imagens/logo-UNIP.png" width="100px"  class="rounded" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-md-6 links">
+                        <p>
+                            <a href="bebidas.html" class="nav-link text-white rodape">Bebidas</a>
+                            <a href="salgado.html" class="nav-link text-white rodape">Salgados</a>
+                            <a href="lanches.html" class="nav-link text-white rodape">Lanches</a>
+                            <a href="totalBandeja.html" class="nav-link text-white rodape">Sua Bandeja</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 d-flex  ml-auto">
+                        <a href="" class="btn btn-outline-dark icones ml-2 mt-4 mb-4 btn-md">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-dark icones ml-2 mt-4 mb-4">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="" class="btn btn-outline-dark icones ml-2 mt-4 mb-4">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
+    </body>
+</html>
